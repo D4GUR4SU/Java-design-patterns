@@ -1,4 +1,4 @@
-package com.dagurasu.patterns.factory;
+package com.dagurasu.patterns.factory.pizza;
 
 public class VeggiePizza implements Pizza {
 
