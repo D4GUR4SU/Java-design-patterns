@@ -1,0 +1,5 @@
+package com.dagurasu.patterns.singleton;
+
+public class DateUtil {
+
+}
