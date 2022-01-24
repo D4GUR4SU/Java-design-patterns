@@ -2,28 +2,23 @@ package com.dagurasu.patterns.singleton;
 
 import java.io.Serializable;
 
-public class DateUtil implements Serializable, Cloneable {
+public class Logger implements Serializable, Cloneable {
 
 	private static final long serialVersionUID = 1L;
-	private static volatile DateUtil instance = new DateUtil();
+	private static volatile Logger instance = new Logger();
 
-	private DateUtil() {
+	private Logger() {
 
 	}
 
-	public static DateUtil getInstance() {
-
+	public static Logger getInstance() {
 		if (instance == null) {
-			synchronized (DateUtil.class) {
+			synchronized (Logger.class) {
 				if (instance == null) {
-					instance = new DateUtil();
+					instance = new Logger();
 				}
 			}
 		}
-		return instance;
-	}
-
-	protected Object readResolve() {
 		return instance;
 	}
 
@@ -31,4 +26,9 @@ public class DateUtil implements Serializable, Cloneable {
 	protected Object clone() throws CloneNotSupportedException {
 		throw new CloneNotSupportedException();
 	}
+
+	protected void log(String message) {
+		System.out.println(message);
+	}
+
 }
