@@ -1,4 +1,4 @@
-package com.dagurasu.patterns.adapter;
+package com.dagurasu.patterns.adapter.weather;
 
 public class WeatherFinderImpl implements WeatherFinder {
 
