@@ -29,6 +29,11 @@ public class UserAgentFilter implements Filter {
 		}
 	}
 
+	{
+		System.setProperty("server.servlet.context-path","/");
+	}
+	
+	
 	public void init(FilterConfig fConfig) throws ServletException {
 	}
 
