@@ -82,49 +82,24 @@ public class HttpClient {
 			return method;
 		}
 
-		public void setMethod(String method) {
-			this.method = method;
-		}
-
 		public String getUrl() {
 			return url;
-		}
-
-		public void setUrl(String url) {
-			this.url = url;
 		}
 
 		public String getUserName() {
 			return userName;
 		}
 
-		public void setUserName(String userName) {
-			this.userName = userName;
-		}
-
 		public String getPassword() {
 			return password;
-		}
-
-		public void setPassword(String password) {
-			this.password = password;
 		}
 
 		public String getHeaders() {
 			return headers;
 		}
 
-		public void setHeaders(String headers) {
-			this.headers = headers;
-		}
-
 		public String getBody() {
 			return body;
 		}
-
-		public void setBody(String body) {
-			this.body = body;
-		}
-
 	}
 }
